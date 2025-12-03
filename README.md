@@ -6,24 +6,30 @@ The project combines CNN models with **explainable AI technique** to understand 
 ---
 
 ## Abstract
+
 The increasing use of deep learning in medical imaging raises concerns about the interpretability of AI-driven diagnoses.  
 This project explores an approach to brain tumor classification that integrates explainability tools such as **Grad-CAM** and **LIME**, enabling visual insight into the model’s reasoning.  
 By visualizing attention regions, the project aims to bridge the gap between model accuracy and clinical interpretability.
 
-### Research Question:
-Does high classification accuracy in CNN models for brain tumor MRI represent real clinical understanding, or does the model depend on non-diagnostic image regions?
+### Research Question
+
+**Does high classification accuracy in CNN models for brain tumor MRI represent real clinical understanding, or does the model depend on non-diagnostic image regions?**
 
 ---
-## Goals of the Project:
+
+## Goals of the Project
+
 1. Build a baseline **CNN model** (ResNet18 + EfficientNet) for multi-class brain tumor MRI classification.
 2. Improve performance and robustness through preprocessing, handling class imbalance, and model architecture improvements.
 3. Use **Grad-CAM** to visualize the model’s attention during predictions.
 4. Compare correct vs. incorrect predictions to understand model failure modes.
 5. Identify cases where the model focuses on irrelevant regions (skull, edges, other artifacts).
 6. Highlight why deep learning accuracy can be misleading in medical imaging tasks.
-   
+
 ---
+
 ## Methodology
+
 1. **Data Exploration**
     - Inspect dataset structure, class balance, MRI quality, and artifacts.
 2. **Preprocessing**
@@ -49,6 +55,7 @@ Does high classification accuracy in CNN models for brain tumor MRI represent re
 ---
 
 ## Example Output
+
 Example explanation of model prediction using Grad-CAM:
 
 *(to be updated with visual sample)*  
@@ -57,6 +64,7 @@ Example explanation of model prediction using Grad-CAM:
 ---
 
 ## Future Work
+
 - Test additional explainability tools (Integrated Gradients, SHAP).
 - Investigate training changes (segmentation-guided models, tumor masks).
 - Explore clinically grounded evaluation metrics.
@@ -65,6 +73,7 @@ Example explanation of model prediction using Grad-CAM:
 ---
 
 ## Author
+
 **Safaa Osman**  
 MSc in Biomedical Engineering— Medical Image Processing  
 Interested in AI for medical imaging and interpretable deep learning.
@@ -72,4 +81,5 @@ Interested in AI for medical imaging and interpretable deep learning.
 ---
 
 ## License
+
 You are welcome to use and adapt the code with proper attribution.
