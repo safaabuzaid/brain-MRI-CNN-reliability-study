@@ -1,7 +1,7 @@
 # Evaluating the Clinical Reliability of Deep Learning Models for Brain Tumor Classification Using MRI: An Explainable AI Approach
 
-This repository contains the implementation of an **explainable deep learning model** for brain tumor MRI classification.  
-The goal is not only to achieve accurate predictions but also to provide **interpretable visual explanations** that highlight the MRI regions most responsible for each decision.
+This repository explores **whether deep learning models that achieve high accuracy on brain tumor MRI classification actually make clinically meaningful decisions.**
+The project combines CNN models with **explainable AI technique** to understand *where the model looks and whether that focus aligns with real medical features.*
 
 ---
 
@@ -11,27 +11,40 @@ This project explores an approach to brain tumor classification that integrates 
 By visualizing attention regions, the project aims to bridge the gap between model accuracy and clinical interpretability.
 
 ### Research Question:
-Does high classification accuracy in CNN models for brain tumor MRI truly reflect clinically meaningful decision-making, or do models rely on spurious or irrelevant image features?
+Does high classification accuracy in CNN models for brain tumor MRI represent real clinical understanding, or does the model depend on non-diagnostic image regions?
 
 ---
 ## Goals of the Project:
-1. **Build a robust CNN model** for brain tumor classification that achieves high predictive accuracy.
-2. **Evaluate model reliability** using explainable AI techniques (e.g., Grad-CAM) to visualize attention on MRI images.
-3. **Analyze discrepancies** between high accuracy and clinical relevance, identifying cases where the model focuses on non-tumor regions.
-4. **Understand limitations** of deep learning models in medical imaging and provide insights into improving model trustworthiness for clinical applications.
-
+1. Build a baseline **CNN model** (ResNet18 + EfficientNet) for multi-class brain tumor MRI classification.
+2. Improve performance and robustness through preprocessing, handling class imbalance, and model architecture improvements.
+3. Use **Grad-CAM** to visualize the model’s attention during predictions.
+4. Compare correct vs. incorrect predictions to understand model failure modes.
+5. Identify cases where the model focuses on irrelevant regions (skull, edges, other artifacts).
+6. Highlight why deep learning accuracy can be misleading in medical imaging tasks.
+   
 ---
 ## Methodology
-1. **Dataset**: Public Brain Tumor MRI dataset (7,000+ labeled 2D scans).  
-2. **Preprocessing**: Image normalization, resizing, and augmentation.  
-3. **Model**: Convolutional Neural Network (CNN) architecture for multi-class classification.  
-4. **Explainability**: Grad-CAM and LIME to visualize the model’s decision-making regions.  
-5. **Evaluation**: Performance metrics (accuracy, precision, recall) and interpretability analysis.
+1. **Data Exploration**
+    - Inspect dataset structure, class balance, MRI quality, and artifacts.
+2. **Preprocessing**
+    - Normalization, resizing, augmentation, class balancing strategies.
+3. **Model Training**
+    - Baseline model: ResNet-18
+    - Modified model: EfficientNet
+    - Compare accuracy and general performance.
+4. **Explainability Analysis**
+    - Apply Grad-CAM on test images.
+    - Inspect model attention and save annotated heatmaps.
+5. **Error Analysis**
+    - Create a CSV (gradcam_analysis.csv) summarizing predictions, errors, focus regions, and clinical insights.
+    - Manual review to understand whether the model looked at tumor regions or misleading areas.
+6. **Interpretation & Insights**
+    - Analyze cases where the model performs well but for the wrong reasons.
+    - Highlight why such models are unreliable for clinical deployment.
 
 ---
 
 ## Repository Structure
-*(to be updated)* 
 
 ---
 
@@ -44,7 +57,10 @@ Example explanation of model prediction using Grad-CAM:
 ---
 
 ## Future Work
-*(to be updated)*  
+- Test additional explainability tools (Integrated Gradients, SHAP).
+- Investigate training changes (segmentation-guided models, tumor masks).
+- Explore clinically grounded evaluation metrics.
+- Build a small report or paper summarizing findings.  
 
 ---
 
