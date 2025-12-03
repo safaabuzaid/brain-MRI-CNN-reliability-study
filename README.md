@@ -32,7 +32,7 @@ By visualizing attention regions, the project aims to bridge the gap between mod
 
 ## Methodology
 
-
+<img width="1345" height="417" alt="Image" src="https://github.com/user-attachments/assets/057383e1-9c3d-4377-94a7-1c7ad2e2bcd9" />
 
 1. **Data Exploration**
     - Inspect dataset structure, class balance, MRI quality, and artifacts.
