@@ -3,6 +3,8 @@
 This repository explores **whether deep learning models that achieve high accuracy on brain tumor MRI classification actually make clinically meaningful decisions.**
 The project combines CNN models with **explainable AI technique** to understand *where the model looks and whether that focus aligns with real medical features.*
 
+<img width="1020" height="249" alt="Image" src="https://github.com/user-attachments/assets/1e3ba5e9-e9e1-4037-a6f6-d52a44cc080c" />
+
 ---
 
 ## Abstract
@@ -29,6 +31,8 @@ By visualizing attention regions, the project aims to bridge the gap between mod
 ---
 
 ## Methodology
+
+<img width="1345" height="417" alt="Image" src="https://github.com/user-attachments/assets/057383e1-9c3d-4377-94a7-1c7ad2e2bcd9" />
 
 1. **Data Exploration**
     - Inspect dataset structure, class balance, MRI quality, and artifacts.
