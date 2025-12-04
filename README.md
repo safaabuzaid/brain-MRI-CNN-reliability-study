@@ -7,11 +7,19 @@ The project combines CNN models with **explainable AI technique** to understand 
 
 ---
 
-## Abstract
+## Introduction 
 
-The increasing use of deep learning in medical imaging raises concerns about the interpretability of AI-driven diagnoses.  
-This project explores an approach to brain tumor classification that integrates explainability tools such as **Grad-CAM** and **LIME**, enabling visual insight into the model’s reasoning.  
-By visualizing attention regions, the project aims to bridge the gap between model accuracy and clinical interpretability.
+Deep learning models achieve impressive accuracy in medical imaging tasks, but most still operate as “black boxes,” making clinicians hesitant to trust them. In domains like brain MRI diagnosis—where decisions must be transparent—explainability is essential.
+
+This project explores how reliably a CNN model classifies brain tumors by combining performance evaluation with interpretability tools such as Grad-CAM. The goal is simple:
+
+to check whether the model is truly learning tumor-related features or relying on irrelevant patterns.
+
+By visualizing the regions that influence the model’s predictions, the project compares:
+- What the model focuses on, vs.
+- What actually matters clinically.
+  
+This helps reveal whether high accuracy reflects real understanding or just statistical shortcuts.
 
 ### Research Question
 
