@@ -1,4 +1,4 @@
-# Evaluating the Clinical Reliability of Deep Learning Models for Brain Tumor Classification Using MRI: An Explainable AI Approach
+# Evaluating the Clinical Reliability of Deep Learning Models for Brain Tumor Classification Using MRI
 
 This repository explores **whether deep learning models that achieve high accuracy on brain tumor MRI classification actually make clinically meaningful decisions.**
 The project combines CNN models with **explainable AI technique** to understand *where the model looks and whether that focus aligns with real medical features.*
