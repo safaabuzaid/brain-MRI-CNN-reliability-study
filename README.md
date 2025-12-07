@@ -7,7 +7,7 @@ The project combines CNN models with **explainable AI technique** to understand 
 
 ---
 
-## Introduction 
+## Introduction
 
 Deep learning models achieve impressive accuracy in medical imaging tasks, but most still operate as “black boxes,” making clinicians hesitant to trust them. In domains like brain MRI diagnosis—where decisions must be transparent—explainability is essential.
 
@@ -16,6 +16,7 @@ This project explores how reliably a CNN model classifies brain tumors by combin
 to check whether the model is truly learning tumor-related features or relying on irrelevant patterns.
 
 By visualizing the regions that influence the model’s predictions, the project compares:
+
 - What the model focuses on, vs.
 - What actually matters clinically.
   
