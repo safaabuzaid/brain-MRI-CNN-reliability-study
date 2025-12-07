@@ -89,10 +89,21 @@ This helps reveal whether high accuracy reflects real understanding or just stat
 
 ## Example Output
 
-Example explanation of model prediction using Grad-CAM:
+**Example explanation of model prediction using Grad-CAM:**
 
-*(to be updated with visual sample)*  
-> The generated heatmap highlights regions within the MRI scan that contributed most to the model’s classification decision.
+<img width="500" height="300" alt="Image" src="https://github.com/user-attachments/assets/8da1b47e-419f-46f6-9014-c5536316aced" />
+
+- Model correctly detected **Glioma**; but Grad-CAM focuses on **skull edges.**
+  
+
+<img width="500" height="300" alt="Image" src="https://github.com/user-attachments/assets/53762e76-4582-441a-907a-81cb59609d76" />
+
+- Model **misclassified** pituitary as meningioma; focus almost to tumor and it's surrounding tissues.
+  
+
+<img width="500" height="300" alt="Image" src="https://github.com/user-attachments/assets/194746b7-82e8-45d8-82bd-d54d3f1130f2" />  
+
+- Model misclassified Glioma as meningioma; focus drifted to the background.
 
 ---
 
