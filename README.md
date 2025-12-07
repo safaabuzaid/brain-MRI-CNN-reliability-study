@@ -103,7 +103,7 @@ This helps reveal whether high accuracy reflects real understanding or just stat
 
 <img width="500" height="300" alt="Image" src="https://github.com/user-attachments/assets/194746b7-82e8-45d8-82bd-d54d3f1130f2" />  
 
-- Model misclassified Glioma as meningioma; focus drifted to the background.
+- Model **misclassified** Glioma as meningioma; focus drifted to the **background.**
 
 ---
 
